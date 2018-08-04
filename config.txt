@@ -1,0 +1,4 @@
+basic_image="uhub.service.ucloud.cn/uaishare/gpu_uaiservice_ubuntu-16.04_python-2.7_tensorflow-1.8.0:v1.0" # -b 设置基础镜像
+uhub_name="uai_test" # -u 设置镜像库名称
+add_software="" # -a 需要添加的环境 如 RUN pip install torch torchvision 即可添加pytorch,如果需要多行，请使用"\n"分隔
+bucket=t2i #ufile bucket
