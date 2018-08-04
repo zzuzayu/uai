@@ -17,6 +17,10 @@ ln -s ${path} ${folder}/${USER}_data_$2
 echo "ln -s ${path} ${folder}/${USER}_data_$2"
 cd ${filepath}
 source config.txt
+if [ $3 ]; then
+    bucket=$3
+    echo "get bucket: $bucket"
+fi
 filemgr-linux64 --action mput --bucket $bucket --dir ${folder}/${USER}_data_$2/  --trimpath ${folder} --threads 2 
 echo "filemgr-linux64 --action mput --bucket $bucket --dir ${folder}/${USER}_data_$2/  --trimpath ${folder} --threads 2 "
 rm "${folder}/${USER}_data_$2"
