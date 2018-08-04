@@ -24,7 +24,13 @@ filepath=$CUR_DIR
 #filepath=$(cd "$(dirname "$0")"; pwd)   
 #echo "file :$0 1: $1 "  
 echo "$filepath"
-source $filepath/config.txt
-echo $basic_image
+#source $filepath/config.txt
+#echo $basic_image
 export PATH="$filepath/:$PATH" 
+read -p "Do you want to add PATH to ~/.bashrc, if you do this, you will not need to source ./path.sh every time. Please enter y or n." yn
+echo $yn
+if [ $yn == "y" ]; then
+    echo "export PATH=\"$filepath/:\$PATH\"" >> ~/.bashrc
+    echo "echo \"export PATH=\"$filepath/:\$PATH\"\" >> ~/.bashrc "
+fi
 echo $PATH    
