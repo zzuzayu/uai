@@ -12,5 +12,5 @@
     - `uai.sh -c codepath -n setname`
 - 7. ### upload dir
     -  set _`config.fig`_ by your own key
-    - `ufileup.sh datapath setname`
+    - `ufileup.sh datapath setname (bucket)`
 
