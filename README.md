@@ -1,7 +1,7 @@
 # How to use uai-train by this script
-1. ### get docker
+### 1. get docker
 `./getdocker.sh` 
-2. ### set path
+### 2. set path
 `source ./path.sh`
 3. ### set your common variables in _`config.txt`_
 4. ### add uaer to docker group
